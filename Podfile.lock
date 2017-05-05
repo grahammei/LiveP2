@@ -1,0 +1,25 @@
+PODS:
+  - ElasticTransition (3.1.1):
+    - MotionAnimation (~> 0.1.2)
+  - MotionAnimation (0.1.2)
+  - NVActivityIndicatorView (3.0)
+  - SCLAlertView (0.7.0)
+  - TKSwitcherCollection (1.3.2)
+
+DEPENDENCIES:
+  - ElasticTransition
+  - MotionAnimation
+  - NVActivityIndicatorView (= 3.0.0)
+  - SCLAlertView
+  - TKSwitcherCollection
+
+SPEC CHECKSUMS:
+  ElasticTransition: 6c4e4739e32480c864217db912100f3657f6447a
+  MotionAnimation: ff5c8fc2e429d7e10d46ae86819ba9759846c343
+  NVActivityIndicatorView: 81953b5e65093ba79edf4fe7268e002039ca5268
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  TKSwitcherCollection: 939c8a60c47be0db6f0327906456cac855918275
+
+PODFILE CHECKSUM: 862ff53d0a3c52cfbeeec5d17cb706641d0b1e2f
+
+COCOAPODS: 1.0.0
