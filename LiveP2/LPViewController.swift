@@ -181,12 +181,16 @@ class LivePViewController: UIViewController, MenuViewDelegate {
             MenuController?.modalPresentationStyle = .custom
         }
         if segue.identifier == segueImage {
-            ImageArrayContainer = segue.destination as? ImageArrayViewController
-             self.ImageArrayContainer?.returnAVAsset = self.currentAVasset
-             self.ImageArrayContainer?.videoToQImage()
-            ImageArrayContainer?.transitioningDelegate = self.transition
-           ImageArrayContainer?.modalPresentationStyle = .custom
-            
+            if self.currentAVasset != nil {
+                ImageArrayContainer = segue.destination as? ImageArrayViewController
+                self.ImageArrayContainer?.returnAVAsset = self.currentAVasset
+                self.ImageArrayContainer?.videoToQImage()
+                ImageArrayContainer?.transitioningDelegate = self.transition
+                ImageArrayContainer?.modalPresentationStyle = .custom
+            }
+            else {
+                self.conAlertView()
+            }
         }
     }
     
